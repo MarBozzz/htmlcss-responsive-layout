@@ -9,6 +9,7 @@
 body {
   color: #FFFFFF;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: .9rem;
 }
 
 /*utilities*/
@@ -29,6 +30,14 @@ body {
 
 img {
   max-width: 100%;
+}
+
+.btn {
+  background-color: #0084FD;
+  padding: .3rem 3rem;
+  color: #FFFFFF;
+  border-radius: 50px;
+  text-decoration: none;
 }
 
 /*header*/
@@ -70,7 +79,7 @@ main {
 }
 
 section {
-  padding-top: 3rem;
+  /*padding-top: 3rem;*/
   padding-bottom: 3rem;
 }
 
@@ -85,8 +94,55 @@ section {
   width: 100%;
   background: #B5DDFF;
   margin-bottom: 2rem;
+  border-radius: 25px;
+  padding: 0 2rem;
 }
 
+.tools .row .col .box h3 {
+  color: #0084FD;
+  padding: 1.5rem 0;
+  font-size: 1.2rem;
+}
+
+.tools .row .col .box p, .strategic .container .row .col .box-right, .testimonials h4, .testimonials>p {
+  color: black;
+}
+
+.box {
+  line-height: 1.5rem;
+}
+
+.tools .row .col .box .btn {
+  display: inline-block;
+  margin: 2rem 0;
+}
+
+.tools .row .col .box .btn span {
+  font-weight: bold;
+  letter-spacing: .1rem;
+}
+
+.tools .row .col .box.second-type {
+  text-align: center;
+}
+
+.tools .row .col .box.second-type i {
+  font-size: 5rem;
+  color: #0084FD;
+  padding-top: 1.5rem;
+}
+
+.tools .row .col .box p {
+  padding-bottom: 1.5rem;
+}
+
+.half-box.d-flex {
+  justify-content: center;
+}
+
+.tools .row .col .box img {
+  max-width: 240px;
+}
 
 /*section 2 - strategic*/
 
@@ -96,15 +152,10 @@ section {
 
 .strategic .container .row .col .box-right {
   background-color: #FFFFFF;
-  color: black;
 }
 
 
 /*section 3 - testimonials*/
-
-.testimonials h4, .testimonials>p {
-  color: black;
-}
 
 .testimonials h3 {
   color: #9792E4;
@@ -163,6 +214,22 @@ footer {
     width: calc(100% * 2 / 3);
   }
 
+  .tools .row .col .box {
+    margin-bottom: 0;
+  }
+
+  .half-box.d-flex {
+    justify-content: flex-start;
+  }
+
+  .box.split, .box.second-type {
+    height: 100%;
+  }
+
+  .tools .row .col .box p {
+    font-size: .8rem;
+  }
+
   .testimonials .card {
     flex-wrap: nowrap;
   }
@@ -198,26 +265,39 @@ footer {
 
   header .container .menu {
     display: flex;
-   }
+  }
 
-   header .container i {
+  header .container i {
     display: none;
-   }
+  }
 
-   .strategic .container {
+  .tools .row .col .box.split {
+    display: flex;
+  }
+
+  .tools .row .col .box .half-box.d-flex {
     width: 50%;
-   }
+    text-align: center;
+  }
 
-   .strategic .container .row {
+  .tools .row .col .box .half-box.text {
+    text-align: left;
+  }
+
+  .strategic .container {
+    width: 50%;
+  }
+
+  .strategic .container .row {
     display: flex;
     align-items: flex-end;
-   }
+  }
 
-   .strategic .container .row .col {
+  .strategic .container .row .col {
     width: 50%;
-   }
+  }
 
-   .benefits .row .col {
+  .benefits .row .col {
     width: calc(100% / 3);
   }
 }
