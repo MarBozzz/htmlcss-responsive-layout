@@ -1,5 +1,94 @@
+/*general*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  color: #FFFFFF;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*utilities*/
+.d-flex {
+  display: flex;
+}
+
+.debug {
+  background-color: aquamarine;
+  border: 1px solid black;
+}
+
+.container {
+  width: 85%;
+}
+
+
+/*header*/
+header {
+  height: 75px;
+  width: 100%;
+  background-color: #0084FD;
+}
+
+header .container {
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  margin: 0 auto;
+}
+
+header .container img {
+  width: 80px;
+}
+
+header .container i {
+  font-size: 1.5rem;
+ }
+
+ header .container .menu {
+  display: none;
+ }
+
+
+ header .container .menu ul {
+  list-style: none;
+ }
+
+
+/*main*/
+main {
+  height: calc(100vh - 310px);
+  overflow: scroll;
+}
+
+/*footer*/
+footer {
+  height: 235px;
+  background-color: #333333;
+}
+
+
+
+@media screen and (min-width:481px) {
+  .container {
+    width: 92%;
+  }
+}
+
+@media screen and (min-width:769px) {
+
+  .container {
+    width: 60%;
+  }
+
+  header .container .menu {
+    display: flex;
+   }
+
+   header .container i {
+    display: none;
+   }
+
 }
